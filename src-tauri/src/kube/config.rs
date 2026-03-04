@@ -11,6 +11,7 @@ pub struct ClusterContext {
     pub is_active: bool,
 }
 
+#[allow(dead_code)]
 pub fn get_kubeconfig_path() -> PathBuf {
     let home = dirs::home_dir().unwrap_or_default();
     std::env::var("KUBECONFIG")

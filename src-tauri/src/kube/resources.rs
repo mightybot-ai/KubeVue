@@ -1,5 +1,5 @@
 use kube::{Api, Client, api::ListParams};
-use k8s_openapi::api::core::v1::{Pod, Service, ConfigMap, Secret, Event, PersistentVolumeClaim, Namespace};
+use k8s_openapi::api::core::v1::{Pod, Service, ConfigMap, Secret, Event, PersistentVolumeClaim};
 use k8s_openapi::api::apps::v1::Deployment;
 use k8s_openapi::api::networking::v1::Ingress;
 use serde::Serialize;

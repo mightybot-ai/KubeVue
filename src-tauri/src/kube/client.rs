@@ -34,6 +34,7 @@ pub async fn get_client(context_name: &str) -> Result<Client, anyhow::Error> {
     Ok(client)
 }
 
+#[allow(dead_code)]
 pub async fn clear_client(context_name: &str) {
     let mut clients = CLIENTS.write().await;
     clients.remove(context_name);
